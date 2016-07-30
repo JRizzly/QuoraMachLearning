@@ -1,3 +1,23 @@
+
+This is my first go at this challenge question, and I like the difficulty. It certainly isn't one that you complete in a day. My goal for this problem: 
+
+-----Already Done -----
+Read the quesetions in and store them
+Assign them thier spots in Vector space
+
+------- WOrking on ------ 
+Tf-IDF weights 
+Time Complexity 
+
+------ TO DO ------ 
+Set up the features I am going to use: 
+    KNN 
+    Vector Space - Euclidian Distane, Cos Similarity 
+    * for the basics of this questions I was just going to use 3 features *
+Build optimizing algorithm so that it can balance the weights of each feature, to match closest with the Evaluation Data
+    
+
+
 <span class="rendered_qtext">When a user adds a question to Quora, we automatically suggest topics which might be relevant to the question. For example, a question about Dijkstra&#039;s algorithm would probably fit well under the topics &quot;Algorithms&quot; and &quot;Graph Theory&quot;.<br /><br />We have a pretty good machine learning system in place for generating these topics, but it could always be better. Your goal in this task is to design a question topic labeler.<br /><br />The input data consists of a training dataset of <span class="render_latex">[math]T[/math]</span> questions and an evaluation dataset of <span class="render_latex">[math]E[/math]</span>&nbsp; questions. Your labeler should suggest 10 topics for each question in the evaluation set, ordered by relevance.<br /><br /><b>Input Format</b><br />The first line consists of two space-separated integers <span class="render_latex">[math]T[/math]</span> and <span class="render_latex">[math]E\, (1 \leq T \leq 20000, 1 \leq E \leq 1000)[/math]</span> .<br /><br />The next <span class="render_latex">[math]2T[/math]</span>&nbsp; lines provide the training dataset. Each question in the training dataset is described by two lines:<br /><br /><ul><li>One integer <span class="render_latex">[math]N\, (1 \leq N \leq 25)[/math]</span> , followed by <span class="render_latex">[math]N[/math]</span> positive integers (below 250) representing the topic IDs of the question in no particular order. On average, there are approximately 3 topics per question in the dataset.</li><li>One string (between 1 and 500 printable ASCII characters), the question text. The average question text length is 70 characters.</li></ul><br />The next <span class="render_latex">[math]E[/math]</span> lines provide the evaluation dataset. Each question in the evaluation dataset is described by one line (between 1 and 500 ASCII characters), the question text.<br /><br /><b>Output Format</b><br />There are <span class="render_latex">[math]T[/math]</span> lines in total. The <span class="render_latex">[math]i[/math]</span>-th line contains 10 space-separated integers, each representing the topic id of a suggestion for the <span class="render_latex">[math]i[/math]</span>-th question in the evaluation dataset. To maximize your score, topic suggestions for a question should be ordered in descending order of relevance.<br /><br /><b>Sample Input</b><br /><pre class="prettyprint linenums">6 4
 3 1 2 4
 What is the meaning of life?
